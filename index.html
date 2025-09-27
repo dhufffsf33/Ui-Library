@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Ui</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0b1522, #5905b9);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #000000;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #0d0511, #680241);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .logo-text {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 25px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+            border: 1px solid #d0d7e0;
+        }
+        
+        thead tr {
+            background-color: #000000;
+            color: white;
+            text-align: left;
+        }
+        
+        th, td {
+            padding: 14px 18px;
+            text-align: left;
+            border-bottom: 1px solid #d0d7e0;
+        }
+        
+        th {
+            font-weight: 600;
+            border-right: 1px solid #3c6eb4;
+        }
+        
+        th:last-child {
+            border-right: none;
+        }
+        
+        tbody tr {
+            transition: background-color 0.2s;
+        }
+        
+        tbody tr:nth-of-type(even) {
+            background-color: #000000;
+        }
+        
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #000000;
+        }
+        
+        tbody tr:hover {
+            background-color: #e9eff9;
+        }
+        
+        .footer {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.85rem;
+            border-top: 2px solid #153c75;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+                justify-content: center;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">li</div>
+                <div class="logo-text">Library Ui</div>
+            </div>
+            <div class="header-text">
+                <h1>Система нейронок</h1>
+                <p class="subtitle">меню</p>
+            </div>
+        </header>
+        
+        <div class="content">
+            <h2>каталог</h2>
+            <p>Ниже представлен каталог с информацией по различным параметрам:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>рисовка</th>
+                        <th>проги</th>
+                        <th>видео</th>
+                        <th>?</th>
+                        <th>?</th>
+                    </tr>
+                </thead>
